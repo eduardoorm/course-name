@@ -1,0 +1,19 @@
+name: Triggers Tarea
+on: 
+  push:
+    branches: [main]
+    paths:
+      - '**.js'
+      
+jobs:
+  MiTarea:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonando Repositorio
+      uses: actions/checkout@v3
+    - name: Instalando Node JS
+      uses: actions/setup-node@v4
+    - name: Imprimiendo Hola Mundo
+      run: npm index.js
+
