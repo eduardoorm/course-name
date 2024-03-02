@@ -1,7 +1,9 @@
 name: Triggers Tarea
 on: 
   push:
-    branches: [main]
+    branches: 
+      - main
+      - aprendiendo-github-actions
     paths:
       - '**.js'
       
