@@ -1,6 +1,9 @@
 name: Triggers Tarea
-on: [push]
-
+on:
+  push:
+    branches:
+      - 'main'
+      - 'aprendiendo-**'
 jobs:
   MiTarea:
     runs-on: ubuntu-latest
