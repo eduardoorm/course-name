@@ -2,7 +2,7 @@ name: Triggers Tarea
 on:
   push:
     branches:
-      - 'main'
+      - main
       - 'aprendiendo-**'
 jobs:
   MiTarea:
