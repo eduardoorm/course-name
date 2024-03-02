@@ -1,0 +1,27 @@
+name: Triggers Tarea
+on:
+  push:
+    branches:
+      - main
+      - 'aprendiendo-**'
+      
+  pull_request:
+    types:
+      - opened
+    branches:
+      - main
+    paths:
+      - '.js' 
+      
+jobs:
+  MiTareaNueva:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clonando Repositorio
+      uses: actions/checkout@v3
+    - name: Instalando Node JS
+      uses: actions/setup-node@v4
+    - name: Imprimiendo Hola Mundo
+      run: node index.js
+
