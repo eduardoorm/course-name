@@ -3,7 +3,7 @@ on:
   push:
     branches: 
       - main
-      - aprendiendo-github-actions
+      - 'aprendiendo-github-actions'
     paths:
       - '**.js'
       
