@@ -17,5 +17,5 @@ jobs:
     - name: Instalando Node JS
       uses: actions/setup-node@v4
     - name: Imprimiendo Hola Mundo
-      run: npm index.js
+      run: node index.js
 
