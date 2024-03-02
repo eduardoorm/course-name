@@ -4,8 +4,17 @@ on:
     branches:
       - main
       - 'aprendiendo-**'
+      
+  pull_request:
+    types:
+      - opened
+    branches:
+      - main
+    paths:
+      - '.js' 
+      
 jobs:
-  MiTarea:
+  MiTareaNueva:
     runs-on: ubuntu-latest
 
     steps:
