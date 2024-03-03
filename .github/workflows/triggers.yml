@@ -1,17 +1,20 @@
 name: Triggers Tarea
 on:
-  push:
-    branches:
-      - main
-      - 'aprendiendo-**'
-      
-  pull_request:
-    types:
-      - opened
-    branches:
-      - main
-    paths:
-      - '.js' 
+  workflow_dispatch:
+    inputs:
+      alerta: 
+        description: 'Nivel'
+        required: true
+        default: medio
+        type: choice
+        options:
+          - bajo
+          - medio
+          - alto
+      tags:
+        description: 'Opcional'
+        required: true
+        type: string
       
 jobs:
   MiTareaNueva:
