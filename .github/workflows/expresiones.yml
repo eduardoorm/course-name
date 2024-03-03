@@ -19,7 +19,7 @@ on:
 
 jobs:
   AprendiendoExpresiones:
-    if: ${{ inputs.showName.length == 'eduardo' }}
+    if: ${{ inputs.showName == 'eduardo' }}
     runs-on: ubuntu-latest
     steps:
       - name: Correr script
