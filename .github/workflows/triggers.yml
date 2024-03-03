@@ -6,8 +6,7 @@ on:
       - 'aprendiendo-**'
       
   pull_request:
-    types:
-      - opened
+    types: [opened, labeled]
     branches:
       - main
     paths:
