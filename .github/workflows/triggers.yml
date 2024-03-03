@@ -1,6 +1,5 @@
 name: Triggers Tarea
 on:
-
   issues: #El tipo de trigger: issues
     types: #Los estados que activarán el trigger
     - [opened, edited, closed]
