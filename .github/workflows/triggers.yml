@@ -1,8 +1,20 @@
 name: Triggers Tarea
 on:
-  issues: #El tipo de trigger: issues
-    types: #Los estados que activarán el trigger
-    - [opened, edited, closed]
+  workflow_dispatch:
+    inputs:
+      alerta: 
+        description: 'Nivel'
+        required: true
+        default: medio
+        type: choice
+        options:
+          - bajo
+          - medio
+          - alto
+      tags:
+        description: 'Opcional'
+        required: true
+        type: string
       
 jobs:
   MiTareaNueva:
