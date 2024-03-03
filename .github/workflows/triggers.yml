@@ -1,17 +1,6 @@
 name: Triggers Tarea
 on:
-  push:
-    branches:
-      - main
-      - 'aprendiendo-**'
-      
-  pull_request:
-    types: [opened, labeled]
-    branches:
-      - 'main'
-    paths:
-      - '.js' 
-      
+
   issues: #El tipo de trigger: issues
     types: #Los estados que activarán el trigger
     - [opened, edited, closed]
