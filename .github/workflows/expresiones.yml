@@ -18,19 +18,19 @@ on:
       
 
 jobs:
-  AprendiendoExpresiones:
+  MostrandoNombre:
     if: ${{ inputs.showName == 'eduardo' }}
     runs-on: ubuntu-latest
     steps:
       - name: Correr script
-        run: echo Hola {{input.showName}} !!
+        run: echo Hola ${{input.showName}}
       
   MayorDeEdad:
     if: ${{ inputs.showEdad > 18 }}
     runs-on: ubuntu-latest
     steps:
       - name: Correr script Mayor de Edad
-        run: echo Hola Señor, tiene  {{input.showEdad} años
+        run: echo Hola Señor, tiene  ${{input.showEdad} años
 
     
       
