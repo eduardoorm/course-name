@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Correr script Mayor de Edad
-        run: echo Hola Señor, tiene  ${{input.showEdad} años
+        run: echo Hola Señor, tiene  ${{inputs.showEdad} años
 
     
       
