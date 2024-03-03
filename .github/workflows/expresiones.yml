@@ -1,0 +1,36 @@
+name: Expresiones en Actions
+on: 
+  push: 
+    branches:
+      - main
+      - 'aprendiendo-**'
+
+  workflow_dispatch:
+    inputs:
+      showEdad:
+        description: 'Edad'
+        required: true
+        type: integer
+      showName:
+        description: 'Nombre'
+        required: true
+        type: string
+      
+
+jobs:
+  AprendiendoExpresiones:
+    if: ${{ inputs.showName.length > 4 }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Correr script
+        run: echo Hola {{input.showName}} !!
+      
+  MayorDeEdad:
+    if: ${{ inputs.showEdad > 18 }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Correr script Mayor de Edad
+        run: echo Hola Señor, tiene  {{input.showEdad} años
+
+    
+      
