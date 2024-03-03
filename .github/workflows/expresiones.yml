@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Correr script
-        run: echo Hola ${{input.showName}}
+        run: echo Hola ${{inputs.showName}}
       
   MayorDeEdad:
     if: ${{ inputs.showEdad > 18 }}
