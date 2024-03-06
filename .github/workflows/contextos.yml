@@ -4,6 +4,11 @@ on:
     branches:
       - main
       - 'aprendiendo-**'
+env:
+  var1: Aprendiendo
+  var2: GitHub-Actions
+  var3: Contextos
+  
 jobs:
   CorriendoScript:
     if: ${{ github.ref == "refs/heads/main" }}
@@ -11,6 +16,7 @@ jobs:
     steps:
       - name: Correr script
         run: echo Desplegado en la rama $GITHUB_REF
+
   Contexto-env:
     runs-on: ubuntu-latest
     steps:
