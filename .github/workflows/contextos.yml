@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-      - 'aprendiendo-**'
+      - 'aprendiendo-github-actions'
 env:
   var1: Aprendiendo
   var2: GitHub-Actions
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Correr script
-        run: echo "Desplegado en la rama $GITHUB_REF"
+        run: echo "Desplegado en la rama $GITHUB_REF en el respositorio ${{ github.repository }}"
 
   Contexto-env:
     runs-on: ubuntu-latest
