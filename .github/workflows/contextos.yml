@@ -1,4 +1,4 @@
-name: Contexto Action
+name: Contexto Actions
 on: 
   push:
     branches:
