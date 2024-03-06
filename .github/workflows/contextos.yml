@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Correr script
-        run: echo Desplegado en la rama $GITHUB_REF
+        run: echo "Desplegado en la rama $GITHUB_REF"
 
   Contexto-env:
     runs-on: ubuntu-latest
