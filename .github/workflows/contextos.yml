@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-      - 'aprendiendo-**'
+      - 'aprendiendo-github-actions'
 env:
   var1: Aprendiendo
   var2: GitHub-Actions
