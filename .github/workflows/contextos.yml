@@ -6,8 +6,8 @@ on:
       - 'aprendiendo-**'
 jobs:
   CorriendoScript:
-    if: ${{ github.ref == "refs/heads/main" }}
-    runs-on: "ubuntu-latest"
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
     steps:
       - name: Correr script
         run: echo Desplegado en la rama $GITHUB_REF
