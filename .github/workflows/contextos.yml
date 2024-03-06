@@ -2,8 +2,8 @@ name: Contexto Action
 on: 
   push:
     branches:
-      -main
-      -"aprendiendo-**"
+      - main
+      - 'aprendiendo-**'
 jobs:
   CorriendoScript:
     if: ${{ github.ref == "refs/heads/main" }}
