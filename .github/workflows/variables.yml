@@ -12,6 +12,8 @@ jobs:
       SALUDO: "HOLA"
     steps:
       - name: Correr Script YOLO
-        run: echo $SALUDO Mundo, $SALUDOS_DOS, HOY ES $DIA_DE_LA_SEMANA .
+        run: |
+            echo $SALUDO Mundo, $SALUDO_DOS, HOY ES $DIA_DE_LA_SEMANA .
+            echo "$SALUDO Mundo, $SALUDO_DOS, HOY ES $DIA_DE_LA_SEMANA" .
         env: 
           SALUDO_DOS: "BUEN DÍA"
